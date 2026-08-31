@@ -1,0 +1,43 @@
+/*
+ * Cyberl33k — Spicetify playback-bar animation
+ * Author: n4th4n0
+ * Repository: https://github.com/n4th4n0/spicetify-cyberl33k
+ *
+ * The character follows Spotify's playback progress.
+ */
+
+.player-controls .playback-progressbar {
+    overflow: visible !important;
+}
+
+.player-controls .playback-progressbar .progress-bar {
+    overflow: visible !important;
+}
+
+.player-controls .playback-progressbar .progress-bar::before {
+    content: "" !important;
+    position: absolute !important;
+
+    /* Follow Spotify's current playback position */
+    left: var(--progress-bar-transform) !important;
+    transition: left var(--progress-bar-duration) linear !important;
+
+    /* Center the character on the exact playback position */
+    transform: translateX(-50%) !important;
+
+    /* Character dimensions — original GIF is 64 × 96 */
+    width: 64px !important;
+    height: 96px !important;
+
+    /* Put the feet just above the progress bar */
+    bottom: calc(100% - 7px) !important;
+
+    background-image: url("https://raw.githubusercontent.com/n4th4n0/spicetify-cyberl33k/main/cyberl33k.gif") !important;
+    background-repeat: no-repeat !important;
+    background-position: center bottom !important;
+    background-size: contain !important;
+
+    image-rendering: pixelated !important;
+    pointer-events: none !important;
+    z-index: 9999 !important;
+}
