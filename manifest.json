@@ -1,20 +1,18 @@
-[
-  {
-    "name": "Cyberl33k Synced",
-    "description": "Animated Cyberl33k character that follows the Spotify playback progress bar.",
-    "preview": "cyberl33k.gif",
-    "main": "cyberl33k.js",
-    "readme": "README.md",
-    "authors": [
-      {
-        "name": "n4th4n0",
-        "url": "https://github.com/n4th4n0"
-      }
-    ],
-    "tags": [
-      "player",
-      "animation",
-      "progress-bar"
-    ]
-  }
-]
+{
+  "name": "Cyberl33k Synced",
+  "description": "Animated Cyberl33k character that follows the Spotify playback progress bar.",
+  "preview": "cyberl33k.gif",
+  "main": "cyberl33k.js",
+  "readme": "README.md",
+  "authors": [
+    {
+      "name": "n4th4n0",
+      "url": "https://github.com/n4th4n0"
+    }
+  ],
+  "tags": [
+    "player",
+    "animation",
+    "progress-bar"
+  ]
+}
